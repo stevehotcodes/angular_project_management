@@ -28,10 +28,9 @@
     border-radius:2rem;
     cursor:pointer;
 }
-#login-signup-wrapper>button>button:hover{
+#login-signup-wrapper>button:hover{
     border:2px solid blue;
-    color:white;
-    background-color: yellow;
+    color:black;
+    background-color:white;
     
-
 }

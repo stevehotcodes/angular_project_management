@@ -10,12 +10,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    
+    LoginComponent,
     NavbarComponent,
     FooterComponent,
     AdminDashboardComponent,

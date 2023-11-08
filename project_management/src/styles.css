@@ -15,6 +15,8 @@
     --secondary-blue-color: #1a73e8;
     --light-green: #23D18B;
     --light-red: #F9685E;
+    --admin-background-color:#2c2c38;
+    --admin-cards-bg-color:#21212d;
 }
 *{
     font-family: 'Jost', 'Montserrat', sans-serif;
@@ -33,10 +35,11 @@ app-root {
     min-height: 100svh;
     width: 100%;
 }
-app-landingpage{
+app-landingpage,app-login,app-signup{
     flex:1;
     /* border:2px solid red; */
     background:url("./assets/cosmic-timetraveler-jQvOExlroYA-unsplash.jpg");
+    
     display:flex;
     justify-content: center;
     align-items:center;
@@ -47,8 +50,26 @@ app-landingpage{
     /* border:2px solid red; */
 
 }
+
+app-admin-dashboar{
+    flex:1;
+    border:2px solid red;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    border:2px solide red
+}
+app-landingpage::before,app-login::before,app-signup::before{
+    content:"";
+    background: rgba(0,0,0,1);
+
+
+}
+
 @media screen and (max-width:330px){
-    app-root,a{
+    app-root{
             flex:1
     }
     app-landingpage{
