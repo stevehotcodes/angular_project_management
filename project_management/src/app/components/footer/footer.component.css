@@ -1,0 +1,9 @@
+footer{
+    background-color:blue;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    flex:1;
+    /* height:50vh; */
+
+}
