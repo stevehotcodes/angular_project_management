@@ -51,15 +51,15 @@ app-landingpage,app-login,app-signup{
 
 }
 
-app-admin-dashboar{
+app-admin-dashboard,app-user-dashboard{
     flex:1;
-    border:2px solid red;
+    /* border:2px solid red; */
     display:flex;
     justify-content: center;
-    align-items:center;
+    /* align-items:center; */
     flex-wrap: wrap;
     flex-shrink: 1;
-    border:2px solide red
+    /* border:2px solide red */
 }
 app-landingpage::before,app-login::before,app-signup::before{
     content:"";
