@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent {
-
+  background:string="https://kfg6bckb.media.zestyio.com/yalantis-interactive-404.gif"
 }

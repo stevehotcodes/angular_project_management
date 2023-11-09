@@ -5,13 +5,15 @@ import { LandingpageComponent } from './components/landingpage/landingpage.compo
 import { LoginComponent } from './components/login/login.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {path:"",component:LandingpageComponent},
   {path:"signup",component:SignupComponent},
   {path:"login",component:LoginComponent},
   {path:"admin",component:AdminDashboardComponent},
-  {path:"user-dashboard",component:UserDashboardComponent}
+  {path:"user-dashboard",component:UserDashboardComponent},
+  {path:"**",component:NotFoundComponent}
 ];
 
 @NgModule({

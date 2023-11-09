@@ -45,13 +45,13 @@ app-landingpage,app-login,app-signup{
     align-items:center;
     flex-wrap: wrap;
     flex-shrink: 1;
-    /* background-color:grey; */
+    background-color:grey;
     /* flex:1; */
     /* border:2px solid red; */
 
 }
 
-app-admin-dashboard,app-user-dashboard{
+app-admin-dashboard,app-user-dashboard,app-not-found{
     flex:1;
     /* border:2px solid red; */
     display:flex;
@@ -64,7 +64,7 @@ app-admin-dashboard,app-user-dashboard{
 app-landingpage::before,app-login::before,app-signup::before{
     content:"";
     background: rgba(0,0,0,1);
-    
+
 }
 
 @media screen and (max-width:330px){

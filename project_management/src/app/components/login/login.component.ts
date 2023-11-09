@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IuserLogin } from 'src/Types/types';
 import { AuthService } from 'src/app/services/auth.service';
 
@@ -10,20 +11,36 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
   login!:FormGroup
+  loggedIn:boolean= false
+  userCredentials!:IuserLogin
 
-  constructor(private fb :FormBuilder, private logInSvc:AuthService){
+  constructor(private fb :FormBuilder, private logInSvc:AuthService, private router:Router){
     this.login=this.fb.group({
       email:["",[Validators.required,Validators.email]],
       password:["",[Validators.required]]
     })
   }
+ 
 
-   logIn(){
-    let userCredentials:IuserLogin=this.login.value;
-    this.logInSvc.login(userCredentials)
-  }
+  //  logIn(){
+  
+  //   this.logInSvc.login(userCredentials)
+  // }
   async userAuthentication(){
-    let respons
+    
+    this.userCredentials =this.login.value;
+     let token = await this.logInSvc.login(this.userCredentials) 
+     console.log( "this is my response", token)
+     
+    let verificationUser=await this.logInSvc.verifyToken()
+       if(verificationUser.info.role==="admin"){
+         this.router.navigate(["/admin"])
+       }
+       else if(verificationUser.info.role==="employees"){
+        this.router.navigate(["/user-dashboard"])
+      }
+     
+    
   }
   
 
