@@ -12,7 +12,10 @@ import { UserDashboardComponent } from './components/user-dashboard/user-dashboa
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserdashboardComponent } from './components/userdashboard/userdashboard.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +26,15 @@ import { UserdashboardComponent } from './components/userdashboard/userdashboard
     AdminDashboardComponent,
     UserDashboardComponent,
     LandingpageComponent,
-    UserdashboardComponent
+    UserdashboardComponent,
+    UserProfileComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
