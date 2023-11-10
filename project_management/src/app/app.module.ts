@@ -16,7 +16,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { AppProjectsComponent } from './components/app-projects/app-projects.component';
+import { CompletedProjectsComponent } from './components/completed-projects/completed-projects.component';
+import { AddProjectComponent } from './components/add-project/add-project.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { HttpClientModule } from '@angular/common/http'
     LandingpageComponent,
     UserdashboardComponent,
     UserProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AppProjectsComponent,
+    CompletedProjectsComponent,
+    AddProjectComponent
   ],
   imports: [
     BrowserModule,

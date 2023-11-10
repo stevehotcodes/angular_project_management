@@ -73,7 +73,7 @@ h1{
 }
 .card{
     width:20rem;
-    height:12rem;
+    height:15rem;
     background-color: var(--admin-cards-bg-color);
     background-color: #2c2c38;
     border:0.2px solid var(--admin-cards-bg-color);
@@ -99,4 +99,13 @@ button {
     color:white;
     margin:0.5rem;
     border-radius: 10rem;
+}
+#no-projects-msg>p{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    flex:1;
+    border:2px solid white;
 }

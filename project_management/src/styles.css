@@ -51,7 +51,7 @@ app-landingpage,app-login,app-signup{
 
 }
 
-app-admin-dashboard,app-user-dashboard,app-not-found{
+app-admin-dashboard,app-not-found,app-app-projects,app-completed-projects,app-add-project{
     flex:1;
     /* border:2px solid red; */
     display:flex;
@@ -61,6 +61,13 @@ app-admin-dashboard,app-user-dashboard,app-not-found{
     flex-shrink: 1;
     /* border:2px solide red */
 }
+app-user-dashboard{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
 app-landingpage::before,app-login::before,app-signup::before{
     content:"";
     background: rgba(0,0,0,1);

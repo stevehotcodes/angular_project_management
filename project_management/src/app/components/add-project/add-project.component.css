@@ -72,8 +72,11 @@ h1{
     
 }
 .card{
-    width:20rem;
-    height:12rem;
+    /* width:20rem;
+    
+    */
+    flex:1;
+    height:100vh;
     background-color: var(--admin-cards-bg-color);
     background-color: #2c2c38;
     border:0.2px solid var(--admin-cards-bg-color);
@@ -82,9 +85,18 @@ h1{
     border-radius:10px;
     display:flex;
     flex-wrap:wrap;
-    align-items: center;
+    justify-content: center;
+    gap:2rem;
     padding:.1rem;
+    /* border:2px solid red; */
 
+}
+input{
+    width:99%;
+    height:10rem;
+    background-color: #2c2c38;
+    color:white;
+    
 }
 
 svg{
@@ -99,4 +111,16 @@ button {
     color:white;
     margin:0.5rem;
     border-radius: 10rem;
+}
+form{
+    flex:1
+}
+label{
+    color:white;
+}
+form>.formgroup{
+    width:90%;
+    /* border:2px solid white; */
+    box-shadow: 2px 2px 2px 2px black;
+    
 }

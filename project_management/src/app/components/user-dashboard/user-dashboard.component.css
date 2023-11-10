@@ -43,7 +43,7 @@ margin-left: 40px;
 background-color: white;
 display: flex;
 justify-content: center;
-justify-content: flex-start;
+/* justify-content: flex-start; */
 align-items: center;
 padding: 40px;
 width: 70%;
@@ -62,4 +62,9 @@ transition: all 0.3s;
 .navbar a:hover {
 color: #ff0000; 
 font-weight: 600; 
+}
+.cards{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
 }

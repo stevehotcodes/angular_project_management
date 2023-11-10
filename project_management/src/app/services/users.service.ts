@@ -34,11 +34,11 @@ export class UsersService {
 //  }
 
  getEmployees(){
-  // let token = localStorage.getItem('token') as string
+ 
   return this.http.get<IUser[]>('http://localhost:3000/user/all', {
     headers: new HttpHeaders({
       'Content-type': 'application/json',
-      // 'token': token
+   
     })
   })
 
